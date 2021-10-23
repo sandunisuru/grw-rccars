@@ -41,7 +41,7 @@ ensure grw-rccars
 - Add `rccar.png` to your `qb-inventory/client/html/images ` folder
 - Copy and Paste this to your `qb-core/shared.lua` file
 
- ``
+ ```
  ["rccar"] = {["name"] = "rccar", ["label"] = "RC Car", ["weight"] = 8000, ["type"] = "item", ["image"] = "rccar.png", ["unique"] = true, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Playable RC Toy Car with embedded Camera"}
- ``
+ ```
  - Enjoy :D
