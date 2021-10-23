@@ -5,8 +5,8 @@ local camOn = false
 local distWarn = false
 local warnOn = false
 
-RegisterNetEvent('rdrp_rccars:rcCar')
-AddEventHandler('rdrp_rccars:rcCar', function()
+RegisterNetEvent('grw-rccars:rcCar')
+AddEventHandler('grw-rccars:rcCar', function()
 	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["rccar"], "remove")
     RCCar.Start()
 end)
@@ -50,7 +50,7 @@ RCCar.HandleKeys = function(distanceCheck)
 	if distanceCheck <= 1.5 then
 		if IsControlJustPressed(0, 38) then
 			RCCar.Attach("pick")
-			TriggerServerEvent('rdrp_rccars:get')
+			TriggerServerEvent('grw-rccars:get')
 			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["rccar"], "add")
 		end
 	end
